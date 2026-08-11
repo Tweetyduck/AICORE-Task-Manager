@@ -1,0 +1,72 @@
+AGENTIC SDLC FUNDAMENTAL TASK - TASK MANAGER WEB APPLICATION
+================================================================
+
+📦 PROJECT DESCRIPTION
+Project: "Task Manager" Web App
+Create a web application that allows users to manage tasks with basic CRUD operations.
+
+🔧 TECH STACK
+Frontend: React.js with TypeScript, Vite, TailwindCSS
+Backend: Spring Boot (Java 17+), Maven
+Database: H2 (In-Memory)
+Communication: REST API with JSON
+Build Tools: Maven (Backend), Vite (Frontend)
+
+💡 ENTITY SCHEMA
+Task {
+   id: number (auto-generated)
+   title: string (required, max 100 characters)
+   description: string (optional, max 500 characters)
+   status: enum ["TODO", "IN_PROGRESS", "DONE"]
+   dueDate: date (optional)
+}
+
+🔁 FUNCTIONAL REQUIREMENTS
+
+FRONTEND:
+- Home page listing all tasks
+- Form to add new tasks
+- Edit and delete functionality for existing tasks
+- Status dropdown for changing task status
+- Sort tasks by status or due date (optional)
+- Form validations (required fields, character limits)
+- Error message display on API failures
+- Responsive UI design
+
+BACKEND:
+- REST API Endpoints:
+  * GET /api/tasks – Retrieve all tasks
+  * GET /api/tasks/{id} – Retrieve task by ID
+  * POST /api/tasks – Create new task
+  * PUT /api/tasks/{id} – Update task
+  * DELETE /api/tasks/{id} – Delete task
+- Bean Validation (@NotBlank, @Size, etc.)
+- H2 database integration
+- CORS enabled for frontend communication
+- Exception handling and logging
+
+🤖 AGENTIC AI INVOLVEMENT
+- Code generation and boilerplate creation
+- Debugging and issue resolution
+- API design and architecture decisions
+- Code refactoring and optimization
+- Test case generation
+- Documentation and comments
+
+🚀 BONUS/OPTIONAL FEATURES
+- Task categorization
+- Search/filter functionality
+- Sorting capabilities
+- Deployment (Vercel/Netlify for frontend, Render/Fly.io for backend)
+
+📅 TIMELINE & DELIVERABLES
+Duration: 1-2 working days
+Deliverables: Git repository with complete working application
+
+✅ SUCCESS CRITERIA
+1. Application runs successfully with all CRUD features working
+2. AI tool usage is clearly documented in README and commit messages
+3. Code is well-structured, readable, and follows best practices
+4. All technical requirements met
+5. Proper testing and error handling implemented
+6. Critical reflection on AI usage documented

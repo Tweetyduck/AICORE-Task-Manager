@@ -1,0 +1,8 @@
+com\example\taskmanager\controller\TaskController.class
+com\example\taskmanager\model\Task$Status.class
+com\example\taskmanager\exception\RestExceptionHandler.class
+com\example\taskmanager\service\TaskNotFoundException.class
+com\example\taskmanager\model\Task.class
+com\example\taskmanager\service\TaskService.class
+com\example\taskmanager\TaskManagerApplication.class
+com\example\taskmanager\repository\TaskRepository.class
