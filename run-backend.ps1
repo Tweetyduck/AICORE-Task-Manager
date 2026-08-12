@@ -28,9 +28,9 @@ if (-not $javaHome -or -not (Test-Path "$javaHome\bin\java.exe")) {
 
 $env:JAVA_HOME = $javaHome
 $env:Path = "$javaHome\bin;$env:Path"
-$env:PORT = '8081'
+$env:PORT = '8080'
 
-$listener = Get-NetTCPConnection -LocalPort 8081 -ErrorAction SilentlyContinue
+$listener = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue
 if ($listener) {
     foreach ($conn in $listener) {
         if ($conn.OwningProcess) {
@@ -41,6 +41,6 @@ if ($listener) {
 
 Set-Location "$PSScriptRoot\backend"
 Write-Host "Using JAVA_HOME=$env:JAVA_HOME"
-Write-Host 'Starting Spring Boot backend on port 8081...'
+Write-Host 'Starting Spring Boot backend on port 8080...'
 
 mvn spring-boot:run

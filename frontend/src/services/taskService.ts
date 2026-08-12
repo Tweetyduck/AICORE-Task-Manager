@@ -1,6 +1,6 @@
 import { Task, ApiError } from '../types/Task';
 
-const API_BASE_URL = 'http://localhost:8081/api';
+const API_BASE_URL = 'http://localhost:8080/api';
 
 export const taskService = {
   async getAllTasks(): Promise<Task[]> {
